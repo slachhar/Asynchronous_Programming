@@ -19,7 +19,13 @@ namespace WindowAsync
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-
+			long i = 10000000;
+			while(i>1)
+			{
+				listBox1.Items.Add("Accepted");
+				i--;
+			}
+			listBox1.Items.Add("Rejected");
 		}
 	}
 }

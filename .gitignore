@@ -3,9 +3,9 @@
 ################################################################################
 
 TaskParallelLibrary/bin
-.vs/*
+.vs
 TaskParallelLibrary/obj
-TaskParallelLibrary/vs/*
+TaskParallelLibrary/vs
 Asynchronous_Programming.sln
 WindowAsync/bin
 WindowAsync/obj
