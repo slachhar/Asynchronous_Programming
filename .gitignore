@@ -8,3 +8,6 @@ TaskParallelLibrary/obj
 TaskParallelLibrary/vs/*
 TaskParallelLibrary/Properties
 Asynchronous_Programming.sln
+WindowAsync/bin
+WindowAsync/obj
+WindowAsync/Properties
