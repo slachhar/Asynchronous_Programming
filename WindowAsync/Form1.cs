@@ -10,35 +10,35 @@ using System.Windows.Forms;
 
 namespace WindowAsync
 {
-	public partial class Form1 : Form
-	{
-		public Form1()
-		{
-			InitializeComponent();
-		}
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
-		private void button1_Click(object sender, EventArgs e)
-		{
-			StringBuilder s = new StringBuilder();
-			Task t1 = new Task(() =>
-			{
-				long i = 100000;
-				
-				while (i > 1)
-				{
-					s.Append("Accepted");
-					s.Append("\n");
-					i--;
-				}
-			});
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int sum = new int();
+            Task t1 = new Task(() =>
+            {
+                long i = 1000000000;
 
-			Task T2 = t1.ContinueWith((antecedent) => {
-				listBox1.Items.Add(s);
-				listBox1.Items.Add("Rejected");
-			},
-			TaskScheduler.FromCurrentSynchronizationContext());
-			t1.Start();
+                while (i > 1)
+                {
+                    sum = sum + 1;
+                    i--;
+                }
+            });
 
-		}
-	}
+            Task T2 = t1.ContinueWith((antecedent) =>
+            {
+                //s.ToString().Split('\n');
+                listBox1.Items.Insert(0, sum);
+            },
+            TaskScheduler.FromCurrentSynchronizationContext());
+            t1.Start();
+
+        }
+    }
 }

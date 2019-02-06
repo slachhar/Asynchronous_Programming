@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskParallelLibrary", "TaskParallelLibrary\TaskParallelLibrary.csproj", "{ADC3384F-0317-406C-9554-1227267CAF19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowAsync", "WindowAsync\WindowAsync.csproj", "{A9A19D1D-5503-421A-A9B9-B83864F5A780}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADC3384F-0317-406C-9554-1227267CAF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC3384F-0317-406C-9554-1227267CAF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC3384F-0317-406C-9554-1227267CAF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC3384F-0317-406C-9554-1227267CAF19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A19D1D-5503-421A-A9B9-B83864F5A780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A19D1D-5503-421A-A9B9-B83864F5A780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A19D1D-5503-421A-A9B9-B83864F5A780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A19D1D-5503-421A-A9B9-B83864F5A780}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2CA9424-9184-4352-9A1E-BFD3D9E32F0C}
+	EndGlobalSection
+EndGlobal
