@@ -2,8 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/TaskParallelLibrary//bin
-/.vs
-/TaskParallelLibrary/obj
-/TaskParallelLibrary/Properties
-/AsynchronousProgramming.sln
+TaskParallelLibrary/bin
+.vs/*
+TaskParallelLibrary/obj
+TaskParallelLibrary/Properties
+AsynchronousProgramming.sln
