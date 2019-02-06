@@ -19,13 +19,26 @@ namespace WindowAsync
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			long i = 10000000;
-			while(i>1)
+			StringBuilder s = new StringBuilder();
+			Task t1 = new Task(() =>
 			{
-				listBox1.Items.Add("Accepted");
-				i--;
-			}
-			listBox1.Items.Add("Rejected");
+				long i = 100000;
+				
+				while (i > 1)
+				{
+					s.Append("Accepted");
+					s.Append("\n");
+					i--;
+				}
+			});
+
+			Task T2 = t1.ContinueWith((antecedent) => {
+				listBox1.Items.Add(s);
+				listBox1.Items.Add("Rejected");
+			},
+			TaskScheduler.FromCurrentSynchronizationContext());
+			t1.Start();
+
 		}
 	}
 }
